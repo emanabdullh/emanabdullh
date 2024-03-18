@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>calculator</title>
+<style type="text/css">
+    body{
+        background-color: rgb(206, 193, 201);
+    }
+    .container{
+        width: 250px;
+        height: 400px;
+        margin: 80px auto;
+        border-radius: 10px;
+        background: rgb(179, 152, 169);
+        box-shadow: 5px 5px 10px #f3edf0 , -5px -5px 10px #eee6e9;
+    }
+    .cal-box{
+        width: 200px;
+        margin: 20px auto;
+    }
+    #display{
+        border: none;
+        outline: none;
+        color: black;
+        text-align: right;
+        font-weight: 600;
+        padding: 15px;
+        margin: 30px 0 20px 0;
+        background: transparent;
+        box-shadow: inset 2px 2px 5px #b265c1,inset -5px -5px 10px #4d3551;
+    }
+    .button{
+        margin: 15px 0 0 5px;
+        width: 42px;
+        height: 42px;
+        border:none ;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        background: rge(214,214,214);
+        box-shadow: inset 5px 5px 10px #b46ec7, -5px -5px 10px #da83ae;
+    }.
+    .clearButton{
+        background: rgb(255, 0, 55);
+        color: rgb(172, 36, 150);
+    }
+    .mathbutton{
+        background: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="cal-box">
+            <form name="calculator">
+                <input id = "display" type="text" name="display" placeholder="0" readonly>
+                <br>
+                <input class="button" type="button" value="7" onclick="calculator.display.value+='7'">
+                <input class="button" type="button" value="8" onclick="calculator.display.value+='8'">
+                <input class="button" type="button" value="9" onclick="calculator.display.value+='9'">
+                <input class="button mathbutton" type="button" value="+" onclick="calculator.display.value+='+'">
+                <br>
+
+    <input class="button" type="button" value="4" onclick="calculator.display.value+='4'">
+    <input class="button" type="button" value="5" onclick="calculator.display.value+='5'">
+    <input class="button" type="button" value="6" onclick="calculator.display.value+='6'">
+    <input class="button mathbutton" type="button" value="-" onclick="calculator.display.value+='-'">
+    <br>
+    <input class="button" type="button" value="1" onclick="calculator.display.value+='1'">
+    <input class="button" type="button" value="2" onclick="calculator.display.value+='2'">
+    <input class="button" type="button" value="3" onclick="calculator.display.value+='3'">
+    <input class="button mathbutton" type="button" value="*" onclick="calculator.display.value+='*'">
+    <br>
+    <input class="button clearButton" type="button" value="c" onclick="calculator.display.value+=''">
+    <input class="button" type="button" value="0" onclick="calculator.display.value+='0'">
+    <input class="button mathbutton" type="button" value="=" onclick="calculator.display.value = '='">
+    <input class="button mathbutton" type="button" value="/" onclick="calculator.display.value+='/'">
+    
+    <br>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

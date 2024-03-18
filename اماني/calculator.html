@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 5px;
+            border-radius: 2%;
+            margin-left: 20px;
+            height: 10vh;
+            width: 10vh;
+            margin-top: 1vh;
+
+        }
+
+        input[type="text"]{
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+            text-align: right;
+            
+        }
+
+        body{
+
+            width: 30vw;
+            padding: 5vw;
+            background-color: rgb(128, 67, 100);
+
+        }
+
+        .btnclear{
+            width: 22vw;
+            text-align:center;
+        }
+    </style>
+
+    <script>
+
+        var num1 = 0;
+        var num2 = 0;
+        var operation = ""
+
+        function shownum(event) {
+            document.getElementById("textbox").value+= event;
+             
+        }
+
+        function operator(event) {
+
+            num1 = document.getElementById("textbox").value;
+
+            if (event == "+") {
+                operation = "+";
+
+            }
+            else if (event == "-"){
+                operation = "-";
+
+            }
+            else if (event == "/"){
+                operation = "/";
+            }
+            else if (event == "*"){
+                operation = "*";
+            }
+            document.getElementById("textbox").value = "";
+        }
+    
+        
+         function calculate() {
+            num2 = document.getElementById("textbox").value;
+
+            if (operation == "+") {
+                result = Number(num) + Number(num2);
+                document.getElementById("textbox").value = result;
+
+            }
+            if (operation == "-") {
+                result = Number(num1) - Number(num2);
+                document.getElementById("textbox").value = result;
+            }
+            if (operation == "/") {
+                result = Number(num1) / Number(num2);
+                document.getElementById("textbox").value = result;
+            }
+            if (operation == "*") {
+                result = Number(num1) * Number(num2);
+                document.getElementById("textbox").value = result;
+            }
+        
+                
+            }
+
+            function btnclear() {
+                document.getElementById("textbox").value ="";
+                num1 = num2 = 0;
+              //  alert('clear');
+            }
+            </script>
+         
+        
+</head>
+
+
+<body>
+
+<div>
+    <input type="text" id="textbox"><br>
+    <button  value="1" onclick="shownum(1)">1</button>
+    <button  value="2" onclick="shownum(2)">2</button>
+    <button  value="3" onclick="shownum(3)">3</button><br>
+    <button  value="4" onclick="shownum(4)">4</button>
+    <button  value="5" onclick="shownum(5)">5</button>
+    <button  value="6" onclick="shownum(6)">6</button><br>
+    <button  value="7" onclick="shownum(7)">7</button>
+    <button  value="8" onclick="shownum(8)">8</button>
+    <button  value="9" onclick="shownum(9)">9</button><br>
+    <button  value="0" onclick="shownum(0)">0</button>
+    <button  value="+" onclick="operator('+')">+</button>
+    <button  value="-" onclick="operator('-')">-</button><br>
+    <button  value="/" onclick="operator('/')">/</button>
+    <button  value="*" onclick="operator('*')">*</button>
+    <button  value="=" onclick="calculate()">=</button>
+    <button class="btnclear" onclick="btnclear()">CLEAR</button>
+
+</div>
+</body>
+
+</html>

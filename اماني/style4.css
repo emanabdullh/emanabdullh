@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(243,243, 243)
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+nav{background-color: rgb(132, 50, 44);
+display:flex;
+justify-content: space-between;
+height: 80px;
+display: flex;
+align-items: center;
+padding: 10px 30px;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+menu a{
+    text-decoration: none;
+    color: white
+    
+}
+
+main{
+    
+    flex: 1;
+    background-color: white
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+body {
+    font-family: "Quicksand"sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+   
+    
+}
+
+/* utility classes */
+.primary-text {
+    color:#e4b95b;
+}
+
+.ptn{
+    display: inline-block;
+    scroll-padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.ptn-primary:hover {
+    background: #e4b95b;
+}
+
+/* Header start */
+header {
+    height: 100vh;
+    background: url('./mmmg.jpg') center center/cover no-repeat;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    color: #161010e5;
+    font-weight: 600;
+}
+
+#navbar ul li a:hover{
+    border-bottom: 2px solid#e4b95b;
+}
+
+header .content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 75%;
+}
+
+header .content h1 {
+    font-size: 40px;
+}
+
+heaer .content p {
+    margin: 20px 0 ;
+}
+
+
+
+/* Header End */
+
+/* offers start */
+#offers{
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+/* offers End */
+ 
+@media screen and (max-width:600px) {
+    .servicrs .card {
+
+        width: 100%;
+        display: block;
+        height:auto;
+
+
+    }
+    
+nav{
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+
+}
+
